@@ -24,3 +24,17 @@ vagrant init ubuntu/bionic64
 # Run the VM
 vagrant up
 ```
+
+## Working with Vagrantfile
+
+### Resizing VM disk
+Install Vagrant plugin [vagrant-disksize](https://github.com/sprotheroe/vagrant-disksize)
+```
+vagrant plugin install vagrant-disksize
+```
+Define the size in the Vagrantfile
+```
+Vagrant.configure("2") do |config|
+    config.disksize.size = '30GB'
+end
+```

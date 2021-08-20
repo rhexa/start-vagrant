@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/bionic64"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "Ubuntu_18.04/xfce4/Android_Dev"
+    vb.name = "Android_Dev_U-18.04-xfce"
 
     # Display the VirtualBox GUI when booting the machine
     vb.gui = true
@@ -20,5 +20,5 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", path: "apt/xfce4.sh"
   config.vm.provision "shell", path: "apt/vscode.sh"
-  config.vm.provision "shell", path: "apt/android-studio.sh"
+  config.vm.provision "shell", path: "apt/android-studio-snapd.sh"
 end
