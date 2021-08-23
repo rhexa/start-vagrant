@@ -38,3 +38,35 @@ Vagrant.configure("2") do |config|
     config.disksize.size = '30GB'
 end
 ```
+
+## Creating an image from a newly created VM
+### Virtual Box
+First we need to grab the name of the VM on the VirtualBox or Vagrantfile if defined.
+In Vagrantfile it looks like
+```
+config.vm.provider "virtualbox" do |vb|
+    vb.name = "lab-ubuntu-gui" # This is VM VBox name
+end
+```
+
+We can also list the VMs installed on Virtual Box by running this command.
+```
+VBoxManage list vms
+```
+
+Run this command to build the new image file from the VM by replacing the name with the name we found earlier.
+Params :
+- `--base <vm-name>` # vm name we found in Vagrantfile or VBoxManage
+- `--output <file-path>` # path to the image file
+```
+vagrant package --base <vm-name> --output <file-path>
+```
+
+## Adding image/box to vagrant
+### Adding custom image to vagrant
+Params :
+- `<file-path.box>` # path to the image file
+- `--name <name>` # define the name to reference this image on Vagrant
+```
+vagrant box add <file-path.box> --name <name>
+```
