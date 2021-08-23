@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
 
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "rhexa/ubuntu-18.04-xfce4"
+  config.vm.box = "ubuntu/bionic64"
 
   # Define the disk size using disksize plugin. (Only works for increasing size).
   # "vagrant plugin install vagrant-disksize"
