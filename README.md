@@ -56,10 +56,10 @@ VBoxManage list vms
 
 Run this command to build the new image file from the VM by replacing the name with the name we found earlier.
 Params :
-- `--base <vm-name>` # vm name we found in Vagrantfile or VBoxManage
-- `--output <file-path>` # path to the image file
+- `--base <vm-name>` # vm name we found in Vagrantfile or VBoxManage (!if failed, use --output only)
+- `--output <file-path.box>` # path to the image file
 ```
-vagrant package --base <vm-name> --output <file-path>
+vagrant package --base <vm-name> --output <file-path.box>
 ```
 
 ## Adding image/box to vagrant
