@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
 
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "ubuntu/bionic64"
+  config.vm.box = "ubuntu/focal64"
 
   # Define the disk size using disksize plugin. (Only works for increasing size).
   # "vagrant plugin install vagrant-disksize"
@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
     vb.name = "lab-ubuntu-gui"
 
     # Display the VirtualBox GUI when booting the machine
-    vb.gui = true
+    vb.gui = false
 
     # Define the VM memory size
     vb.memory = "2048"
@@ -36,8 +36,5 @@ Vagrant.configure("2") do |config|
     sudo apt-get update
   SHELL
 
-  # config.vm.provision "shell", path: "apt/xfce4.sh"
-  # config.vm.provision "shell", path: "apt/vscode.sh"
-  # config.vm.provision "shell", path: "apt/vbox-guest-addition.sh"
-  # config.vm.provision "shell", path: "apt/android-studio-snapd.sh"
+  # config.vm.provision "shell", path: "apt/provision.sh"
 end

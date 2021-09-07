@@ -9,10 +9,10 @@ chmod u+x *.sh
 # ./docker.sh
 # ./gcloud-cli.sh
 # ./lamp.sh
-# ./lxde.sh
-# ./lxde-mac-theme.sh
+# ./lxde.sh             #not working on vagrant, run manually
+# ./lxde-mac-theme.sh   #not working on vagrant, run manually
 # ./vagrant-libvirt.sh
 # ./vagrant.sh
 # ./vbox-guest-addition.sh
 # ./vscode.sh
-# ./xfce4.sh
+# ./xfce4.sh            #not working on vagrant, run manually
