@@ -1,6 +1,6 @@
-# Lab Vagrant
+# Start Vagrant
 
-Lab Vagrant is created for learning and practicing purpose of working with Vagrant.
+Start Vagrant is created for learning and practising purpose to work with Vagrant.
 
 ## Getting Started
 
