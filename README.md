@@ -1,6 +1,6 @@
 # Start Vagrant
 
-Start Vagrant is created for learning and practising purpose to work with Vagrant.
+Start Vagrant is created to quikly start working with Vagrant.
 
 ## Getting Started
 
